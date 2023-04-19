@@ -1,0 +1,7 @@
+python rwkv/convert_pytorch_to_ggml.py Raven1B5v9ctx4096.pth Raven1B5v9ctx4096.bin float16
+python rwkv/quantize.py Raven1B5v9ctx4096.bin Raven1B5v9ctx4096-Q4.bin 3
+python rwkv\chat_with_bot.py Raven1B5v9ctx4096-Q4.bin
+
+cmake -DBUILD_SHARED_LIBS=ON . -B build32
+cmake --build build32 --config Release
+cmake -B build32 -DBUILD_SHARED_LIBS=ON -DCMAKE_TOOLCHAIN_FILE="D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
