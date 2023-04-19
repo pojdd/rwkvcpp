@@ -17,6 +17,7 @@ build-sanitize-thread/
 build32/
 
 models/*
+out/*
 
 /main
 /quantize
