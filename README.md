@@ -18,6 +18,7 @@ rwkv.cpp是一个用cpp部署chatRWKV的项目。
 + 百度云链接: https://pan.baidu.com/s/1bZJGki62CMsWCItGjDFz7A 提取码: 1234
 + 根据原来的项目转换模型。
 + 模型下载地址是 https://huggingface.co/BlinkDL/rwkv-4-raven/tree/main
++ B站视频介绍链接：https://www.bilibili.com/video/BV1KX4y1z7cM
 + 注意是Raven模型也就是对话模型。bot.py里面只对话进行了处理。
 
 ## 最后
